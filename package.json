@@ -1,0 +1,65 @@
+{
+  "name": "meteor-vue3",
+  "private": true,
+  "scripts": {
+    "start": "NO_HMR=1 meteor",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@aacassandra/vue3-progressbar": "^1.0.3",
+    "@babel/runtime": "^7.17.8",
+    "@quasar/extras": "^1.13.4",
+    "@vue/compiler-sfc": "^3.2.31",
+    "@vueuse/core": "^8.2.1",
+    "bcrypt": "^5.0.0",
+    "casual": "^1.6.2",
+    "chart.js": "^3.7.1",
+    "dayjs": "^1.9.7",
+    "decimal.js": "^10.2.1",
+    "faker": "^5.2.0",
+    "gitlab": "^14.2.2",
+    "inputmask": "^5.0.5",
+    "lodash": "^4.17.20",
+    "meteor-node-stubs": "^1.0.1",
+    "moment": "^2.29.1",
+    "numeral": "^2.0.6",
+    "perfy": "^1.1.5",
+    "printd": "^1.4.2",
+    "quasar": "^2.6.2",
+    "shelljs": "^0.8.4",
+    "simpl-schema": "^1.10.2",
+    "vue": "^3.2.31",
+    "vue-json-pretty": "^2.0.6",
+    "vue-meta": "^3.0.0-alpha.2",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/plugin-syntax-flow": "^7.14.5",
+    "@babel/plugin-transform-flow-strip-types": "^7.14.5",
+    "@babel/plugin-transform-typescript": "^7.16.8",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/lodash": "^4.14.170",
+    "@types/meteor": "^1.4.87",
+    "@types/mocha": "^9.1.0",
+    "@types/simpl-schema": "^1.12.1",
+    "@vue/babel-plugin-jsx": "^1.1.1",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.3.4",
+    "eslint": "^8.4.1",
+    "eslint-plugin-vue": "^8.5.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
